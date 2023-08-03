@@ -4,7 +4,7 @@ $(document).ready(function () {
     $('#form').submit(function (event) {
         event.preventDefault();
         var search = $("#search").val();
-        videoSearch(API_KEY, search, 10);
+        videoSearch(API_KEY, search, 6);
     });
 
     function videoSearch(key, search, maxResults) {
