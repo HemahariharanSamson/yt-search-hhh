@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-header">
+            <div class="logo-container">
+                <img src="y.png" alt="YouTube Logo" class="youtube-logo">
+            </div>
+            <h1>YouTube Video Search</h1>
+        </div>
+        <form id="form">
+            <input type="text" id="search" placeholder="Enter a keyword" class="search-input">
+            <button type="submit">Search</button>
+        </form>
+        <div id="videos" class="video-grid"></div>
+        <p>Developed by Hema Hariharan Samson &#128150;</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function (event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>
