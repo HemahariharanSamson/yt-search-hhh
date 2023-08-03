@@ -3,13 +3,12 @@ $(document).ready(function () {
 
     $('#form').submit(function (event) {
         event.preventDefault();
-        // alert("Form is submitted");
         var search = $("#search").val();
-        videoSearch(API_KEY, search, 20);
+        videoSearch(API_KEY, search, 10);
     });
 
     function videoSearch(key, search, maxResults) {
-        $("videos").empty();
+        $("#videos").empty();
 
         $.get(
             "https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=" + maxResults + "&q=" + search,
